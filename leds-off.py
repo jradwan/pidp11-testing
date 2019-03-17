@@ -4,7 +4,7 @@
 #
 # This simple Python script loops through the GPIO pins that control
 # the PiDP-11's 6 LED rows and 12 LED columns and toggles them to HIGH
-# to shut off all LEDs. Useful for "clearing" the from panel of any 
+# to shut off all LEDs. Useful for "clearing" the front panel of any
 # "stuck" LEDs after exiting from simh.
 #
 # Modification History:
@@ -13,7 +13,7 @@
 import RPi.GPIO as GPIO  
 
 GPIO.setmode(GPIO.BCM)
-#GPIO.setwarnings(False)
+GPIO.setwarnings(False)
 
 print "\nTurning off all PiDP-11 LEDs ...\n"
 
