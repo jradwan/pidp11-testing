@@ -4,4 +4,8 @@ Just some quick utilities I threw together to test my PiDP-11 kit (similar to wh
 
 #### [LEDS-OFF](https://github.com/jradwan/pidp11-testing/blob/master/leds-off.py) ####
 
-Sometimes during my testing I've had random LEDs get stuck on. This simple Python script turns off ALL of the LEDs.
+Sometimes during my testing I've had random LEDs get stuck on. This simple Python script turns OFF all of the LEDs.
+
+#### [LEDS-ON](https://github.com/jradwan/pidp11-testing/blob/master/leds-on.py) ####
+
+Counterpart to LEDS-OFF, this simple Python script turns ON all of the LEDs.
