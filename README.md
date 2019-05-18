@@ -9,3 +9,7 @@ Sometimes during my testing I've had random LEDs get stuck on. This simple Pytho
 #### [LEDS-ON](https://github.com/jradwan/pidp11-testing/blob/master/leds-on.py) ####
 
 Counterpart to LEDS-OFF, this simple Python script turns ON all of the LEDs.
+
+#### [LED-CONTROL](https://github.com/jradwan/pidp11-testing/blob/master/led-control.py) ####
+
+After initially creating LEDS-OFF and LEDS-ON, it made sense to combine them into a single script with a command-line switch to determine if the LEDs should be turned on or off.
