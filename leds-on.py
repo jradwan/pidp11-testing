@@ -19,6 +19,8 @@ GPIO.setwarnings(False)
 print "\nTurning on all PiDP-11 LEDs ...\n"
 
 # ledrows (xled0-5) associated gpio pins
+# NOTE: these pin numbers correspond not to the PHYSICAL pin numbers, but the gX numbers listed on the schematic)
+#       example: xled5 = g25 = pin 22
 ledrows = [20, 21, 22, 23, 24, 25]
 
 # turn on ledrows
@@ -31,6 +33,8 @@ for row in ledrows:
 print ""
 
 # ledcols (col0-11) associated gpio pins
+# NOTE: these pin numbers correspond not to the PHYSICAL pin numbers, but the gX numbers listed on the schematic)
+#       example: col0 = g26 = pin 37
 ledcols = [26, 27, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 # turn on ledcols
