@@ -49,7 +49,6 @@ if len(sys.argv) != 1:
 else:
   sys.exit(CMD_HELP)
 
-
 if debug:
   print(f'\nTurning {action} all PiDP-11 LEDs ...\n')
 
@@ -58,8 +57,8 @@ rowcount = 0
 for row in ledrows:
   if debug:
     print(f'Turning {action} xled {rowcount=} (pin {row=})')
-    rowcount = rowcount + 1
-    GPIO.setup(row, GPIO.OUT, initial = gpio_row)
+  rowcount = rowcount + 1
+  GPIO.setup(row, GPIO.OUT, initial = gpio_row)
 
 if debug:
   print(f'')
@@ -68,10 +67,10 @@ if debug:
 colcount = 0
 for col in ledcols:
   if debug:
-    # print "Turning", action, "col" + str(colcount) + " (pin " + str(col) + ")"
     print(f'Turning {action} col {colcount=} (pin {col=})')
-    colcount = colcount + 1
-    GPIO.setup(col, GPIO.OUT, initial = gpio_col)
+  colcount = colcount + 1
+  GPIO.setup(col, GPIO.OUT, initial = gpio_col)
 
 if debug:
   print(f'\nDone!\n')
+  
